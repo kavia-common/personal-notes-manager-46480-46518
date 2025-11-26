@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:export": "next build && next export",
     "start": "next start",
+    "serve:static": "node server-static.js",
     "lint": "next lint"
   },
   "dependencies": {

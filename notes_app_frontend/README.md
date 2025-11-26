@@ -4,8 +4,11 @@ A modern, accessible notes application UI following the Ocean Professional theme
 
 Quick start:
 - Install dependencies: `npm install`
-- Run development server: `npm run dev`
-- Open http://localhost:3000
+- Run development server: `npm run dev` (uses Next on port 3000 by default)
+- If port 3000 is in use in your environment, you can serve the static export:
+  - Build and export: `npm run build:export`
+  - Serve on an open port: `PORT=3001 npm run serve:static`
+- Open http://localhost:3000 (or the chosen PORT)
 
 Environment:
 - Set `NEXT_PUBLIC_API_BASE` or `NEXT_PUBLIC_BACKEND_URL` to enable backend CRUD.
